@@ -1,0 +1,23 @@
+<div class="p-fluid" style="margin-left: 10px;margin-right: 10px;">
+    <div class="p-field">
+        <label for="firstname1">NameOfCompany</label>
+        <input id="firstname1" [(ngModel)]="noc"  type="text" pInputText> 
+    </div>
+    <div class="p-field">
+        <label for="lastname1">Description</label>
+        <input id="lastname1" [(ngModel)]="description"  type="text" pInputText> 
+    </div>
+    <div class="p-field">
+        <label for="lastname1">Experience</label>
+        <input id="lastname1" [(ngModel)]="exp"  type="text" pInputText> 
+    </div>
+    <div class="p-field">
+        <label for="lastname1">NoticePeriod</label>
+        <input id="lastname1" [(ngModel)]="noticeperiod" type="text" pInputText> 
+    </div>
+    <div class="p-field">
+        <label for="lastname1">CTC</label>
+        <input id="lastname1" [(ngModel)]="ctc"  type="text" pInputText> 
+    </div>
+    <button type="button" pButton label="Add Opening" (click)="AddOpening()" style="width:200px;margin-top: 10px;" ></button> 
+</div>

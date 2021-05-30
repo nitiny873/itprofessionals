@@ -1,0 +1,26 @@
+ 
+<p-table [value]="users">
+    <ng-template pTemplate="header">
+        <tr>
+            
+            <th>Name</th>
+             <th>Company</th>
+            <th>Experience</th>
+        </tr>
+        
+    </ng-template>
+    <ng-template pTemplate="body" let-user>
+        <tr>
+            <!-- <td>{{product.code}}</td>
+          -->
+          <td>{{user.name}}</td>
+          <td>{{user.company}}</td>
+          <td>{{user.experience}}</td>
+          <button type="button" pButton label="Details" [routerLink]="['/dashboard', user.id]" ></button> 
+<!--            
+          <button type="button" pButton label="Delete" (click)="deleteemployee(employee.id)" ></button>  -->
+            <!-- <td>{{product.category}}</td>
+            <td>{{product.quantity}}</td> -->
+        </tr>
+    </ng-template>
+</p-table>

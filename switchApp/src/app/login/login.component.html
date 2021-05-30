@@ -1,0 +1,21 @@
+<!-- <div class="md-12" style="background-color: cadetblue;height: 50px;" >
+    <h1 >Login Form</h1>
+</div> -->
+<div style="margin-left: 20px;">
+    <span class="p-float-label" style="margin-top: 10px;">
+    <input id="float-input" type="text" [(ngModel)]="username" pInputText> 
+    <label  >Username</label>
+</span>
+<br>
+<span class="p-float-label">
+    <input id="float-input" type="password" [(ngModel)]="password" pInputText> 
+    <label>Password</label>
+</span>
+<br>
+
+<button type="button" pButton label="Login"(click)="login()" ></button> 
+
+<br>
+<p>{{username}}</p>
+<span style="color: red;">{{errMessage}}</span>
+</div>

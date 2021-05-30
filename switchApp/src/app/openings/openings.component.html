@@ -1,0 +1,28 @@
+ 
+<p-table [value]="openings">
+    <ng-template pTemplate="header">
+        <tr>
+            
+            <th>Name</th>
+             <th>Description</th>
+            <th>Experience</th>
+            <th>Notice Period</th>
+        </tr>
+        
+    </ng-template>
+    <ng-template pTemplate="body" let-opening>
+        <tr>
+            <!-- <td>{{product.code}}</td>
+          -->
+          <td>{{opening.nameOfCompany}}</td>
+          <td>{{opening.description}}</td>
+          <td>{{opening.experience}}</td>
+          <td>{{opening.noticePeriod}}</td>
+          <button type="button" pButton label="Details" [routerLink]="['/opening', opening.id]" ></button> 
+<!--         
+          <button type="button" pButton label="Delete" (click)="deleteemployee(employee.id)" ></button>  -->
+            <!-- <td>{{product.category}}</td>
+            <td>{{product.quantity}}</td> -->
+        </tr>
+    </ng-template>
+</p-table>
